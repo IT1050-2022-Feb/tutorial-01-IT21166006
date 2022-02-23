@@ -19,6 +19,19 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
-  
+	float distence,price;  //variable declaration
+    printf("Enter van traveled distence(KM):");  //get inputs from user
+    scanf("%f",&distence);
+    
+    if (distence<=30.0)  //calculation part
+    {
+    	price=50.0*distence;
+	}
+    elseif:
+    {
+    	price=1500.0+(distence-30.0)*40.0;
+	}
+	
+	printf("Your travel charge is:%.2f",price);  //print price
   return 0;
 }
